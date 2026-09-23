@@ -7,8 +7,8 @@ MatPlotLib https://matplotlib.org/
 Numpy https://numpy.org/
 
 # Anweisung zur Installition der Bibliotheken:
--Terminal öffnen
--Diese Befehl einschreiben (Numpy wird Automatisch mit MatPlotLib installieren)
+- Terminal öffnen
+- Diese Befehl einschreiben (Numpy wird Automatisch mit MatPlotLib installieren)
 
 ```
 pip install matplotlib
