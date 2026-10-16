@@ -2,9 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider
 
-L1 = 5.0
-L2 = 4.0
-L3 = 6.0
+L1 = 6.0
+L2 = 5.0
+L3 = 4.0
 
 def get_joint_positions(theta1, theta2, theta3):
     # Joint 1 position (elbow)
@@ -28,7 +28,7 @@ plt.subplots_adjust(bottom=0.25)
 
 # Axis configurations
 ax.set_xlim(-16, 16)
-ax.set_ylim(-16, 16)
+ax.set_ylim(-1, 31)
 ax.grid(True)
 ax.set_title("Robot Arm Forward Kinematics Simulation")
 
@@ -41,7 +41,7 @@ ax.legend()
 # --- CREATE TEXT DISPLAY ENGINE FOR COORD INFO ---
 # Placing a clean text box in the upper-left inside space of the plot coordinates
 # Format: ax.text(X_pos, Y_pos, string_text, box_styling)
-text_reference = ax.text(-15, 14, f"Endpunkt:\nX: {init_X[3]:.2f}\nY: {init_Y[3]:.2f}", fontsize=12, fontweight='bold',
+text_reference = ax.text(-15, 14, f"Endeffektor:\nX: {init_X[3]:.2f}\nY: {init_Y[3]:.2f}", fontsize=12, fontweight='bold',
                          bbox=dict(facecolor='lightyellow', alpha=0.8, boxstyle='round,pad=0.5'))
 
 # --- CREATE SLIDERS ---
